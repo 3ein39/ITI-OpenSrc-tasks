@@ -4,7 +4,81 @@
     <meta charset="UTF-8">
     <title>Registration</title>
 </head>
-<body>
 
+<style>
+    td, tr {
+        padding: 10px;
+        background-color: mistyrose;
+    }
+</style>
+
+<body>
+<form>
+    <table border="5px" style="border-color: pink" align="center">
+        <tr>
+            <th>First Name:</th>
+            <td><input type="text" name="first_name" required></td>
+        </tr>
+        <tr>
+            <th>Last Name:</th>
+            <td><input type="text" name="last_name" required></td>
+        </tr>
+        <tr>
+            <th>Password:</th>
+            <td><input type="password" name="password" required></td>
+        </tr>
+        <tr>
+            <th rowspan="2" class="gender-label">Gender:</th>
+            <td><input type="radio" name="gender" value="male"> Male</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="gender" value="female"> Female</td>
+        </tr>
+        <tr>
+            <th>Birthday:
+
+                <select name="birth_month" required>
+                    <option value="" disabled selected>Select Month</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4" >April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8" >August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11" >November</option>
+                    <option value="12">December</option>
+
+                </select>
+            </th>
+            <td><input type="number" name="birth_day" min="1" max="31" required placeholder="dd">
+            <input type="number" name="birth_year" min="1" max="2023" required placeholder="yyyy"></td>
+
+        </tr>
+        <tr>
+            <th colspan="2">Interests:</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="interests" value="sports"> Sports</td>
+            <td><input type="checkbox" name="interests" value="music"> Music</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="interests" value="movies"> Movies</td>
+            <td><input type="checkbox" name="interests" value="travel"> Travel</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="interests" value="food"> Food</td>
+            <td><input type="checkbox" name="interests" value="books"> Books</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit">Register</button>
+            </td>
+        </tr>
+    </table>
+</form>
 </body>
 </html>
