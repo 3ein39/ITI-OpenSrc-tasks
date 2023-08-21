@@ -4,6 +4,50 @@
     <title>Login</title>
 </head>
 <body>
+<form style="width: 50%; margin: auto" >
+    <fieldset>
+        <legend>Login Form</legend>
 
+        <div>
+            <label for="username">User name:</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your username">
+        </div>
+
+       <div >
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div >
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+                <optgroup label="Afirca">
+                    <option value="egypt">Egypt</option>
+                    <option value="tunisia">Tunisia</option>
+                    <option value="algeria">Algeria</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="france">France</option>
+                    <option value="russia">Japan</option>
+                    <option value="uk">UK</option>
+                </optgroup>
+                <optgroup label="North America">
+                    <option value="canada">Canada</option>
+                    <option value="mexico">Mexico</option>
+                    <option value="usa">USA</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div >
+            <label>
+                <input type="checkbox" name="remember" id="remember">
+                Remember me
+            </label>
+        </div>
+
+        <button type="submit">Login</button>
+    </fieldset>
+</form>
 </body>
 </html>
