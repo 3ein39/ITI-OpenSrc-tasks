@@ -1,0 +1,69 @@
+/* reset all styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p {
+    display: inline;
+    color: white;
+    margin-right: 16px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #ED078B;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.topnav2{
+    background-color: white;
+    overflow: hidden;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav2 a {
+    color: #423F8D;
+    margin: 16px;
+}
+
+.topnav2 a:hover {
+    color: #ED078B;
+}
+
+.topnav2 button {
+    background-color: #07edc3;
+    color: white;
+    border: none;
+    border-radius: 20%;
+    padding: 8px;
+    cursor: pointer;
+    float: right;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
