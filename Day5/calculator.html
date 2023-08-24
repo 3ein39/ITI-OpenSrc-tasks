@@ -216,6 +216,24 @@
         return result;
     }
 
+    // keyboard support
+    let keys = document.querySelectorAll('input[type="button"]');
+    document.addEventListener('keydown', (e) => {
+        let pressed = e.key;
+        if (e.key === "Enter")
+            pressed = "=";
+
+        if (e.key === 'c' || e.key === "C" || e.key === "Escape" || e.key === "Delete")
+            pressed = "C";
+
+
+        keys.forEach((key) => {
+            if (key.value === pressed) {
+                key.click();
+            }
+        })
+    })
+
 
 </script>
 </body>
