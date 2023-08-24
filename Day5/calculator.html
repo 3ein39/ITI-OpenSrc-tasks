@@ -99,8 +99,12 @@
     </tr>
 </table>
 <script>
+    // storing the displayed expression
+    let exp = "";
+    let display = document.getElementById("Answer");
     function EnterNumber(val){
-        alert(val);
+        exp += val;
+        display.value = exp;
     }
 </script>
 </body>
