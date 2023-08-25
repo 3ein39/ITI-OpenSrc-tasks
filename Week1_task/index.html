@@ -14,23 +14,29 @@
 <div class="container">
     <button value="about">About</button>
     <button value="gallery">Gallery</button>
-    <button value="services">Services</button>
+    <div class="dropdown">
+        <button value="services">Services</button>
+        <div class="dropdown-options">
+            <a href="#">Service 1</a>
+            <a href="#">Service 2</a>
+            <a href="#">Service 3</a>
+        </div>
+    </div>
     <button value="complain">Complain</button>
 </div>
 <div class="container card" style="display: none" id="about" value="card">
     <p>A story about snow man</p>
 </div>
-    <div  id="gallery" style="display: none" value="card">
-        <div class="image-container">
-            <img src="images/left.png" class="arrow arrow-left" alt="Left Arrow">
-            <img src="images/1.jpg" class="main-image" alt="Main Image">
-            <img src="images/right.png" class="arrow arrow-right" alt="Right Arrow">
-        </div>
+
+<div  id="gallery" style="display: none" value="card">
+    <div class="image-container">
+        <img src="images/left.png" class="arrow arrow-left" alt="Left Arrow">
+        <img src="images/1.jpg" class="main-image" alt="Main Image">
+        <img src="images/right.png" class="arrow arrow-right" alt="Right Arrow">
     </div>
-    <div class="container card" style="display: none" id="services" value="card">
-        <p>card test</p>
-    </div>
-    <div class="container card" style="display: none" id="complain" value="card">
+</div>
+
+<div class="container card" style="display: none" id="complain" value="card">
         <form>
             <div class="form-group">
                 <label for="name">Name:</label>
@@ -52,7 +58,7 @@
                 <button type="submit" id="form-button">Submit</button>
             </div>
         </form>
-    </div>
+</div>
 </div>
 <script src="app.js"></script>
 </body>
