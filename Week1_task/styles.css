@@ -48,8 +48,8 @@ button {
 
 
 .main-image {
-    max-width: 100%;
-    height: auto;
+    width: 350px;
+    height: 250px;
     margin: 0 20px; /* Adjust spacing */
     transition: transform 0.3s;
 }
