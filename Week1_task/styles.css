@@ -53,3 +53,25 @@ button {
     margin: 0 20px; /* Adjust spacing */
     transition: transform 0.3s;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.complain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e9e8e5;
+    box-shadow: 0 0 20px 0px #adadad;
+}
+.form-group {
+    margin: 8px;
+}
