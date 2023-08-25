@@ -13,3 +13,22 @@ button {
     box-shadow: -1px 7px 11px gray;
     cursor: pointer;
 }
+
+.card {
+    width: 70%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+
+.clicked {
+    box-shadow: -1px 7px 11px #575757;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
