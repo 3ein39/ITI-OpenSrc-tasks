@@ -18,7 +18,7 @@ buttons.forEach((button) => {
         // display the card with the clicked button
         cards.forEach((card) => {
             if (card.id === button.value) {
-                card.style.display = "block";
+                card.style.display = "flex";
             }
         })
 
