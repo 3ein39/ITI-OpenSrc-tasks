@@ -19,7 +19,8 @@ button {
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
-    background-color: antiquewhite;
+    background-color: #e9e8e5;
+    box-shadow: 0 0 20px 0px #adadad;
 }
 
 .clicked {
