@@ -23,9 +23,26 @@ buttons.forEach((button) => {
         })
 
     });
-
-
 })
 
+let left = document.querySelector(".arrow-left");
+let right = document.querySelector(".arrow-right");
+let mainImage = document.querySelector(".main-image");
+left.addEventListener("click", () => {
+   // change them main image src
+    let index = mainImage.src[mainImage.src.length- 5];
+    let nextIndex = ((Number(index) - 1) % 8);
+    if (nextIndex === 0) {
+        nextIndex = 8;
+    }
+    mainImage.src = `./images/${nextIndex}.jpg`;
+})
+
+right.addEventListener("click", () => {
+    // change them main image src
+    let index = mainImage.src[mainImage.src.length- 5];
+    let nextIndex = ((Number(index) + 1) % 8) + 1;
+    mainImage.src = `./images/${nextIndex}.jpg`;
+})
 
 
