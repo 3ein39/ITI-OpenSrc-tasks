@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 8px inset blue;
+    color: white;
+    background-color: blue;
+    box-shadow: -1px 7px 11px gray;
+    cursor: pointer;
+}
