@@ -8,14 +8,23 @@
 <body>
 <div class="main">
 <div class="container">
-    <button>About</button>
-    <button>Gallery</button>
-    <button>Services</button>
-    <button>Complain</button>
+    <button value="about">About</button>
+    <button value="gallery">Gallery</button>
+    <button value="services">Services</button>
+    <button value="complain">Complain</button>
 </div>
-<div class="container card">
+<div class="container card" style="display: none" id="about">
     <p>card test</p>
 </div>
+    <div class="container card" style="display: none" id="gallery">
+        <p>card test</p>
+    </div>
+    <div class="container card" style="display: none" id="services">
+        <p>card test</p>
+    </div>
+    <div class="container card" style="display: none" id="complain">
+        <p>card test</p>
+    </div>
 </div>
 <script src="app.js"></script>
 </body>
