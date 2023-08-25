@@ -1,6 +1,6 @@
 // change the blur of the 4 buttons on click
 let buttons = document.querySelectorAll("button");
-let cards = document.querySelectorAll(".card");
+let cards = document.querySelectorAll("[value='card']");
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
         console.log(button);
