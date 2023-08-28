@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>Simple Form Page with Validation</title>
 </head>
 <body>
 <h1>Form with Validation</h1>
 <form action="#" method="post">
+    <div class="container">
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    <span id="name-error" class="error"></span><br><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <span id="name-error" class="error" style="display: none"></span>
+</div>
 
+    <div class="container">
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <span id="email-error" class="error"></span><br><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <span id="email-error" class="error" style="display: none"></span>
+    </div>
 
-
+    <div class="container">
     <label for="age">Age:</label>
     <input type="number" id="age" name="age">
-    <span id="age-error" class="error"></span><br><br>
+    <span id="age-error" class="error" style="display: none"></span>
+    </div>
 
+    <div class="container">
     <label for="phone">Phone:</label>
-    <input type="tel" id="phone" name="phone">
-    <span id="phone-error" class="error"></span><br><br>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone">
+    <span id="phone-error" class="error" style="display: none"></span>
+    </div>
 
+    <div class="container">
     <label for="password">Password:</label>
-    <input type="password" id="password" name="password">
-    <span id="password-error" class="error"></span><br><br>
+    <input type="password" id="password" name="password" placeholder="Enter your password">
+    <span id="password-error" class="error" style="display: none"></span>
+        </div>
     <input type="submit" value="Submit">
 </form>
 
