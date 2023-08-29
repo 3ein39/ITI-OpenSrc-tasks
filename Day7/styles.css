@@ -27,7 +27,7 @@ button {
     cursor: pointer;
 }
 
-.posts {
+#posts {
     background-color: #007bff;
     width: 70%;
     /*height: 50px;*/
