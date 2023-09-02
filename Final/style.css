@@ -1,3 +1,54 @@
 body {
-    background: lightseagreen;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.top-nav {
+    padding: 20px;
+    background: darkblue;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin-left: 60px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+ul li:hover {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.active {
+    opacity: 1;
 }
