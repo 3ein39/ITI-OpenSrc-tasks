@@ -43,7 +43,7 @@ img {
     width: 100%;
 }
 
-.top-nav .map {
+.home-first .map {
     position: absolute;
     top: 10%;
     left: 50%;
@@ -110,6 +110,18 @@ ul li:hover {
 a {
     text-decoration: none;
     color: #fff;
+}
+
+.home-first>.container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    margin: auto;
+    color: white;
 }
 
 .active {
