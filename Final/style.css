@@ -195,3 +195,49 @@ a {
 .active {
     opacity: 1;
 }
+
+footer {
+    background-color: #efefefef; /* Gray background color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Distribute sections evenly horizontally */
+    flex-wrap: wrap; /* Wrap sections to a new row if they don't fit */
+}
+
+.footer-section {
+    flex-basis: calc(25% - 20px); /* Set width for each section (25% - 20px for spacing) */
+    margin-right: 20px; /* Add spacing between sections */
+    margin-bottom: 20px; /* Add spacing between rows */
+}
+
+/* Style section headings */
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Style section content */
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Style the links in the "Links" section */
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333; /* Link color */
+}
+
+/* Style links on hover */
+.footer-section ul li a:hover {
+    color: #007bff; /* Link color on hover */
+}
