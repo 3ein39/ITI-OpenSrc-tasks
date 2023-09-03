@@ -241,3 +241,14 @@ footer {
 .footer-section ul li a:hover {
     color: #007bff; /* Link color on hover */
 }
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack cards on smaller screens */
+    }
+
+    .card-numbers {
+        flex-basis: auto; /* Allow cards to take full width */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add spacing between rows */
+    }
+}
