@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>About Us</title>
+    <title>Contact Us</title>
 </head>
 <body>
 
@@ -19,71 +19,45 @@
             <li><a href="index.html">Home</a></li>
             <li>Dropdown</li>
             <li>Services</li>
-            <li class="active"><a href="about.html"> About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html"> About Us</a></li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
         </ul>
     </div>
 </nav>
 <div id="warehouse" class="blur-blue">
-<!--    container with header paragraph and button-->
+    <!--    container with header paragraph and button-->
 
     <div class="about-first">
 
         <div class="container">
-            <h1>About Us
+            <h1>Contact Us
             </h1>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            <button class="btn btn-primary">Get started</button>
         </div>
     </div>
 </div>
-
-<h1 class="center">Our Team</h1>
-<div class="row2">
-<div class="card-team">
-    <img src="placeholder.png" alt="" class="placeholder-circle">
-    <h2>Hussein Hany</h2>
-    <p>CEO</p>
-    <br>
-    <p>lorem ipsum</p>
-</div>
-    <div class="card-team">
-        <img src="placeholder.png" alt="" class="placeholder-circle">
-        <h2>Hussein Hany</h2>
-        <p>CEO</p>
-        <br>
-        <p>lorem ipsum</p>
-    </div>
-    <div class="card-team">
-        <img src="placeholder.png" alt="" class="placeholder-circle">
-        <h2>Hussein Hany</h2>
-        <p>CEO</p>
-        <br>
-        <p>lorem ipsum</p>
-    </div>
-</div>
-<div class="row2">
-    <div class="card-team">
-        <img src="placeholder.png" alt="" class="placeholder-circle">
-        <h2>Hussein Hany</h2>
-        <p>CEO</p>
-        <br>
-        <p>lorem ipsum</p>
-    </div>
-    <div class="card-team">
-        <img src="placeholder.png" alt="" class="placeholder-circle">
-        <h2>Hussein Hany</h2>
-        <p>CEO</p>
-        <br>
-        <p>lorem ipsum</p>
-    </div>
-    <div class="card-team">
-        <img src="placeholder.png" alt="" class="placeholder-circle">
-        <h2>Hussein Hany</h2>
-        <p>CEO</p>
-        <br>
-        <p>lorem ipsum</p>
-    </div>
+<div class="contact-form">
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submitButton">Send</button>
+        </div>
+    </form>
 </div>
 <footer>
     <div class="footer-section">
