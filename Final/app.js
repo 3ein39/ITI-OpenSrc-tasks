@@ -5,3 +5,9 @@ const menu = document.querySelector(".menu");
 menuIcon.addEventListener("click", () => {
     menu.classList.toggle("active");
 });
+
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    console.log(event);
+});
