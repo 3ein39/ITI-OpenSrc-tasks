@@ -254,16 +254,13 @@ footer {
 }
 
 #warehouse {
-    background-image: url("warehouse.webp");
+    background-image: url("warehouse.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     min-height: 600px;
     position: relative;
-    filter: blur(10px);
-    z-index: 1;
-    background-color: rgba(255, 0, 0, 0.5); /* Change the color and opacity as needed */
 }
 
 #warehouse::before {
@@ -274,4 +271,22 @@ footer {
     left: 0;
     height: 100%;
     width: 100%;
+}
+.about-first {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+}
+.about-first>.container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+    color: white;
 }
