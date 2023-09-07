@@ -13,6 +13,8 @@ body {
 img {
     overflow-clip-margin: content-box;
     overflow: clip;
+    max-width: 100%;
+    height: auto;
 }
 
 .img-fluid {
@@ -358,9 +360,77 @@ button[type="submit"] {
 
 }
 
+.card-icon {
+    display: flex;
+    max-width: 30%;
+    margin-top: 30px;
+    gap: 8px;
+    padding: 32px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.card-icon-img {
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .row2 {
+    max-width: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: auto;
+}
+
+
+/*media query for row2 class*/
+@media screen and (max-width: 768px) {
+    .row2 {
+        flex-direction: column; /* Stack cards on smaller screens */
+    }
+
+    .card-team {
+        flex-basis: auto; /* Allow cards to take full width */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add spacing between rows */
+    }
+
+    .card-icon {
+        flex-basis: auto; /* Allow cards to take full width */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add spacing between rows */
+    }
+
+    .card-icon-img {
+        flex-basis: auto; /* Allow cards to take full width */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add spacing between rows */
+    }
+
+    .card-numbers {
+        flex-basis: auto; /* Allow cards to take full width */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add spacing between rows */
+    }
+
+    .card-numbers span {
+        flex-basis: auto; /* Allow cards to take full width */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add spacing between rows */
+    }
+
+    .card-numbers p {
+        flex-basis: auto; /* Allow cards to take full width */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add spacing between rows */
+    }
 }
