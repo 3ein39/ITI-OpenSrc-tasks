@@ -445,3 +445,17 @@ button[type="submit"] {
     width: 100%;
     display: flex;
 }
+ul.dropdown-content {
+    display: none; /* Hide the menu by default on small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 30px; /* Adjust this value to position the dropdown below the header */
+    left: -20px;
+    width: 100%;
+    gap: 8px;
+    text-align: center;
+}
+
+ul.dropdown-content.active {
+    display: flex; /* Show the menu when the "active" class is added */
+}
