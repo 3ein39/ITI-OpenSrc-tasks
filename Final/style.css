@@ -309,7 +309,7 @@ input[type="email"],
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    /*border: 1px solid #ccc;*/
     border-radius: 5px;
 }
 textarea {
@@ -401,6 +401,7 @@ button[type="submit"] {
     .card-team {
         flex-basis: auto; /* Allow cards to take full width */
         margin-right: 0; /* Remove right margin */
+        max-width: 100%;
         margin-bottom: 20px; /* Add spacing between rows */
     }
 
@@ -408,6 +409,7 @@ button[type="submit"] {
         flex-basis: auto; /* Allow cards to take full width */
         margin-right: 0; /* Remove right margin */
         margin-bottom: 20px; /* Add spacing between rows */
+        max-width: 100%;
     }
 
     .card-icon-img {
@@ -433,4 +435,13 @@ button[type="submit"] {
         margin-right: 0; /* Remove right margin */
         margin-bottom: 20px; /* Add spacing between rows */
     }
+}
+
+.row > .card-numbers > p {
+    color: #fff;
+}
+
+.container2 {
+    width: 100%;
+    display: flex;
 }
